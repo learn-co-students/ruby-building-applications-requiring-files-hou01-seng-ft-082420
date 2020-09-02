@@ -68,7 +68,7 @@ class Plant
   end
 end
 
-lawn = Garden.new(name: 'Front Lawn') # we can call Plant.new because Garden is defined above
+lawn = Garden.new(name: 'Front Lawn') # we can call Garden.new because Garden is defined above
 
 basil = Plant.new(name: 'Basil') # we can call Plant.new because Plant is defined above
 basil.garden = lawn
@@ -131,7 +131,7 @@ other file.
 
 ## Define `require_relative` and `require`
 
-By requiring a file, we are telling Ruby, 'go load the that code exists in this file.'
+By requiring a file, we are telling Ruby, 'go load the code that exists in this file.'
 We have two ways to tell Ruby to do this: `require_relative` and `require`.
 
 #### `require_relative`
